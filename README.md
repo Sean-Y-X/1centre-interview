@@ -58,6 +58,25 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Sean's note:
+
+Get the application report by the following:
+
+```
+http://localhost:3000/application-report
+http://localhost:3000/application-report?channel=all
+http://localhost:3000/application-report?channel=sales
+http://localhost:3000/application-report?channel=website
+http://localhost:3000/application-report?channel=qr
+```
+
+As we discussed in the first interview that 1centre has a plan to move its backend to Nest.js, so I chose Nest.js to do the test as well.
+The dev experience was pretty good, felt easy to set up and handy to use. I simply followed its architecture.
+  
+Areas to improve:
+1. Add input validation to the api.
+2. Better error handling.
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).

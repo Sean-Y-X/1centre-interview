@@ -55,7 +55,7 @@ describe('AppController', () => {
     appService = app.get<AppService>(AppService);
   });
 
-  describe('root', () => {
+  describe('application report', () => {
     it('should return zeros when there is no application data', async () => {
       jest.spyOn(appService, 'getApplications').mockResolvedValueOnce([]);
       const expectedResult = {
